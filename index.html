@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Christine Artucilla — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <main>
+
+    <!-- ─── HERO ─────────────────────────────────────────── -->
+    <section class="hero" id="hero" aria-label="Introduction">
+
+      <!-- Cover photo -->
+      <div class="cover-photo">
+        <div class="cover-overlay" aria-hidden="true"></div>
+        <!-- decorative text on cover -->
+        <div class="cover-text" aria-hidden="true">
+          <span>Full Stack Developer</span>
+          <span>·</span>
+          <span>Web &amp; Mobile</span>
+          <span>·</span>
+          <span>AR Developer</span>
+          <span>·</span>
+          <span>Philippines 🇵🇭</span>
+        </div>
+      </div>
+
+      <!-- Profile card -->
+      <div class="container">
+        <div class="profile-card">
+
+          <!-- Avatar -->
+          <div class="profile-avatar-wrap">
+            <img src="assets/profile.svg" alt="Christine Artucilla" class="profile-avatar" />
+            <span class="profile-status-dot" aria-label="Available for opportunities"></span>
+          </div>
+
+          <!-- Info + actions row -->
+          <div class="profile-info">
+            <div class="profile-meta">
+              <h1 class="profile-name">Christine Artucilla</h1>
+              <p class="profile-title">Full Stack Developer &nbsp;·&nbsp; Web &amp; Mobile &nbsp;·&nbsp; AR Developer</p>
+              <div class="profile-badges">
+                <span class="profile-badge">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  Philippines
+                </span>
+                <span class="profile-badge">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                  Chozen Resources Inc.
+                </span>
+                <span class="profile-badge profile-badge--green">
+                  <span class="mini-dot" aria-hidden="true"></span>
+                  Open to work
+                </span>
+              </div>
+            </div>
+
+            <div class="profile-actions">
+              <a href="#contact" class="btn btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Message
+              </a>
+              <a href="#projects" class="btn btn-ghost">
+                View Projects
+              </a>
+            </div>
+          </div>
+
+          <!-- Tabs -->
+          <nav class="profile-tabs" aria-label="Profile sections">
+            <a href="#about"      class="profile-tab">About</a>
+            <a href="#skills"     class="profile-tab">Skills</a>
+            <a href="#projects"   class="profile-tab profile-tab--active">Projects</a>
+            <a href="#experience" class="profile-tab">Experience</a>
+            <a href="#contact"    class="profile-tab">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Stats strip -->
+        <div class="profile-stats">
+          <div class="profile-stat">
+            <strong>5</strong>
+            <span>Live Projects</span>
+          </div>
+          <div class="profile-stat">
+            <strong>2+</strong>
+            <span>Years Building</span>
+          </div>
+          <div class="profile-stat">
+            <strong>100%</strong>
+            <span>Responsive</span>
+          </div>
+          <div class="profile-stat typed-stat">
+            I build&nbsp;
+            <span class="typed-wrap" aria-live="polite">
+              <span id="typed"></span><span class="caret" aria-hidden="true">|</span>
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ─── ABOUT ─────────────────────────────────────────── -->
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <div class="container about-grid">
+
+        <div class="about-text reveal">
+          <span class="section-label">About me</span>
+          <h2 id="about-heading">Building things that work — on every screen, every platform</h2>
+          <p>
+            I'm a full stack developer based in the Philippines. I build web applications, mobile apps, and AR experiences from the ground up — front to back. I've shipped real products used by real people, and that's what drives me.
+          </p>
+          <p>
+            I started in front-end, moved into back-end systems, picked up mobile development, and now I work across the full stack. I've built recruitment platforms, trade portals, real estate systems, and AR-powered applications.
+          </p>
+          <p>
+            I care about clean code, solid UX, and delivering things that actually work — not just things that look like they might.
+          </p>
+          <a class="btn btn-outline" href="#contact">Let's work together →</a>
+        </div>
+
+        <div class="about-cards reveal reveal--delay">
+          <div class="about-card about-card--accent">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <strong>Full Stack Web Dev</strong>
+            <p>End-to-end web apps — from responsive front-end interfaces to back-end systems and databases.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+            </div>
+            <strong>Mobile Developer</strong>
+            <p>Cross-platform mobile applications built for real users on real devices.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <strong>AR Developer</strong>
+            <p>Augmented Reality experiences that blend the digital and physical world.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <strong>Ships Real Products</strong>
+            <p>Live websites and systems used by actual clients — not just portfolio demos.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── SKILLS ─────────────────────────────────────────── -->
+    <section id="skills" class="section section-tinted" aria-labelledby="skills-heading">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="section-label">What I work with</span>
+          <h2 id="skills-heading">Skills &amp; Tools</h2>
+          <p>The stack I use across web, mobile, and AR.</p>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-group">
+            <h3 class="skill-group-title">Front-End</h3>
+            <div class="skill-pills">
+              <span class="skill-pill skill-pill--core">HTML5</span>
+              <span class="skill-pill skill-pill--core">CSS3</span>
+              <span class="skill-pill skill-pill--core">JavaScript (ES6+)</span>
+              <span class="skill-pill skill-pill--core">Responsive Design</span>
+              <span class="skill-pill skill-pill--core">Bootstrap</span>
+              <span class="skill-pill skill-pill--core">React</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Back-End &amp; Database</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">PHP</span>
+              <span class="skill-pill">MySQL</span>
+              <span class="skill-pill">REST APIs</span>
+              <span class="skill-pill">XAMPP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Mobile &amp; AR</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Mobile Development</span>
+              <span class="skill-pill">AR Development</span>
+              <span class="skill-pill">Unity (AR)</span>
+              <span class="skill-pill">Cross-Platform</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group-title">Tools &amp; Design</h3>
+            <div class="skill-pills">
+              <span class="skill-pill">Figma</span>
+              <span class="skill-pill">Git &amp; GitHub</span>
+              <span class="skill-pill">VS Code</span>
+              <span class="skill-pill">UI/UX Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─────────────────────────────────────────── -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+
+        <div class="section-intro reveal">
+          <span class="section-label">My work</span>
+          <h2 id="projects-heading">Projects</h2>
+          <p>Real websites and systems I built — from job portals to real estate platforms to AR apps.</p>
+        </div>
+
+        <!-- ── Filter tabs ── -->
+        <div class="proj-filters reveal">
+          <button class="proj-filter proj-filter--active" data-filter="all">All</button>
+          <button class="proj-filter" data-filter="web">Web</button>
+          <button class="proj-filter" data-filter="mobile">Mobile &amp; AR</button>
+        </div>
+
+        <!-- ══ WORK PROJECTS ══ -->
+        <div class="proj-group reveal" data-group="work">
+          <div class="proj-group-header">
+            <span class="proj-group-dot proj-group-dot--blue"></span>
+            <span class="proj-group-title">Work Projects</span>
+            <span class="proj-group-count">3 projects</span>
+          </div>
+
+          <div class="proj-3col-grid">
+
+            <!-- Chozen Resources -->
+            <article class="proj-card proj-card--live" data-tags="web">
+              <a href="https://chozenresources.com" target="_blank" rel="noopener noreferrer"
+                 class="proj-thumb" aria-label="Open Chozen Resources Inc.">
+                <div class="proj-browser-bar" aria-hidden="true">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <span class="proj-url">chozenresources.com</span>
+                </div>
+                <div class="proj-thumb-frame">
+                  <img
+                    src="https://api.microlink.io/?url=https://chozenresources.com&screenshot=true&meta=false&embed=screenshot.url&type=png"
+                    alt="Chozen Resources Inc. preview"
+                    class="proj-thumb-img"
+                    loading="lazy"
+                  />
+                  <div class="proj-thumb-overlay" aria-hidden="true">
+                    <span class="proj-visit-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      Visit live site
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <div class="proj-body">
+                <div class="proj-top">
+                  <div>
+                    <div class="proj-status proj-status--live">
+                      <span class="proj-status-dot"></span>Live
+                    </div>
+                    <h3 class="proj-name">Chozen Resources Inc.</h3>
+                    <p class="proj-role">Manpower &amp; Placement Agency</p>
+                  </div>
+                  <a href="https://chozenresources.com" target="_blank" rel="noopener noreferrer" class="proj-link-btn" aria-label="Visit Chozen Resources">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+                <p class="proj-desc">Job listings, applicant registration, a 3-step application flow, and a virtual assistant chatbot. DOLE &amp; SEC registered.</p>
+                <div class="proj-tags">
+                  <span>Job Portal</span><span>PHP</span><span>MySQL</span><span>Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- Chozen Trade -->
+            <article class="proj-card proj-card--live" data-tags="web">
+              <a href="https://ctd.chozenresources.com" target="_blank" rel="noopener noreferrer"
+                 class="proj-thumb" aria-label="Open Chozen Trade and Distribution OPC">
+                <div class="proj-browser-bar" aria-hidden="true">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <span class="proj-url">ctd.chozenresources.com</span>
+                </div>
+                <div class="proj-thumb-frame">
+                  <img
+                    src="https://api.microlink.io/?url=https://ctd.chozenresources.com&screenshot=true&meta=false&embed=screenshot.url&type=png"
+                    alt="Chozen Trade and Distribution OPC preview"
+                    class="proj-thumb-img"
+                    loading="lazy"
+                  />
+                  <div class="proj-thumb-overlay" aria-hidden="true">
+                    <span class="proj-visit-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      Visit live site
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <div class="proj-body">
+                <div class="proj-top">
+                  <div>
+                    <div class="proj-status proj-status--live">
+                      <span class="proj-status-dot"></span>Live
+                    </div>
+                    <h3 class="proj-name">Chozen Trade &amp; Distribution OPC</h3>
+                    <p class="proj-role">Trade &amp; Logistics Company</p>
+                  </div>
+                  <a href="https://ctd.chozenresources.com" target="_blank" rel="noopener noreferrer" class="proj-link-btn" aria-label="Visit Chozen Trade">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+                <p class="proj-desc">Product catalog with 6 industry sections, account registration, inquiry flow, and a 3-step ordering process. SEC &amp; DTI registered.</p>
+                <div class="proj-tags">
+                  <span>Trade Portal</span><span>PHP</span><span>MySQL</span><span>Responsive</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 201 System — coming soon -->
+            <article class="proj-card proj-card--coming" data-tags="web">
+              <div class="proj-thumb proj-thumb--placeholder proj-thumb--warm">
+                <div class="proj-placeholder-icon" aria-hidden="true">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </div>
+                <span class="proj-placeholder-label">201 System</span>
+                <span class="proj-coming-badge">Coming soon</span>
+              </div>
+              <div class="proj-body">
+                <div class="proj-top">
+                  <div>
+                    <div class="proj-status proj-status--building">
+                      <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                      In development
+                    </div>
+                    <h3 class="proj-name">201 System</h3>
+                    <p class="proj-role">Employee Records Management</p>
+                  </div>
+                </div>
+                <p class="proj-desc">A comprehensive 201 file management system for employee records — personal info, employment history, documents, and HR workflows.</p>
+                <div class="proj-tags">
+                  <span>Web System</span><span>PHP</span><span>MySQL</span><span>HR System</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ══ OJT PROJECT ══ -->
+        <div class="proj-group reveal" data-group="ojt">
+          <div class="proj-group-header">
+            <span class="proj-group-dot proj-group-dot--orange"></span>
+            <span class="proj-group-title">OJT Project</span>
+            <span class="proj-group-count">1 project</span>
+          </div>
+
+          <!-- Full width — solo card -->
+          <div class="proj-solo-grid">
+
+            <article class="proj-card proj-card--live" data-tags="web">
+              <a href="https://arkcrestrealtycorporation.com/login" target="_blank" rel="noopener noreferrer"
+                 class="proj-thumb proj-thumb--wide" aria-label="Open Arkcrest Realty Corporation">
+                <div class="proj-browser-bar" aria-hidden="true">
+                  <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+                  <span class="proj-url">arkcrestrealtycorporation.com/login</span>
+                </div>
+                <div class="proj-thumb-frame">
+                  <img
+                    src="https://api.microlink.io/?url=https://arkcrestrealtycorporation.com/login&screenshot=true&meta=false&embed=screenshot.url&type=png"
+                    alt="Arkcrest Realty Corporation login system preview"
+                    class="proj-thumb-img"
+                    loading="lazy"
+                  />
+                  <div class="proj-thumb-overlay" aria-hidden="true">
+                    <span class="proj-visit-pill">
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                      Visit live site
+                    </span>
+                  </div>
+                </div>
+              </a>
+              <div class="proj-body">
+                <div class="proj-top">
+                  <div>
+                    <div class="proj-status proj-status--live">
+                      <span class="proj-status-dot"></span>Live
+                    </div>
+                    <h3 class="proj-name">Arkcrest Realty Corporation</h3>
+                    <p class="proj-role">Internal Web System · Real Estate · OJT</p>
+                  </div>
+                  <a href="https://arkcrestrealtycorporation.com/login" target="_blank" rel="noopener noreferrer" class="proj-link-btn" aria-label="Visit Arkcrest Realty">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+                <p class="proj-desc">Secure login system with 4-step employee account creation and a full staff management dashboard — built from scratch during OJT.</p>
+                <div class="proj-tags">
+                  <span>Web System</span><span>Auth</span><span>PHP</span><span>MySQL</span><span>Dashboard</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ══ CLIENT & SCHOOL PROJECTS ══ -->
+        <div class="proj-group reveal" data-group="client">
+          <div class="proj-group-header">
+            <span class="proj-group-dot proj-group-dot--purple"></span>
+            <span class="proj-group-title">Client &amp; School Projects</span>
+            <span class="proj-group-count">2 projects</span>
+          </div>
+
+          <div class="proj-featured-grid">
+
+            <!-- Planet Games — client website -->
+            <article class="proj-card" data-tags="web">
+              <div class="proj-thumb proj-thumb--placeholder proj-thumb--dark">
+                <div class="proj-placeholder-icon" aria-hidden="true">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+                </div>
+                <span class="proj-placeholder-label">Planet Games</span>
+              </div>
+              <div class="proj-body">
+                <div class="proj-top">
+                  <div>
+                    <div class="proj-status proj-status--soon">
+                      <span class="proj-status-dot proj-status-dot--soon"></span>Deploying soon
+                    </div>
+                    <h3 class="proj-name">Planet Games</h3>
+                    <p class="proj-role">Client Work · Gaming Brand Website</p>
+                  </div>
+                  <span class="proj-platform-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                    Web
+                  </span>
+                </div>
+                <p class="proj-desc">Bold dark-themed website for a gaming brand client — built to match their high-energy identity. Heading toward deployment.</p>
+                <div class="proj-tags">
+                  <span>Client Work</span><span>Gaming</span><span>Dark UI</span><span>Web Design</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- AR-NIS — school capstone -->
+            <article class="proj-card" data-tags="mobile">
+              <div class="proj-thumb proj-thumb--placeholder proj-thumb--purple">
+                <div class="proj-placeholder-icon" aria-hidden="true">
+                  <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                </div>
+                <span class="proj-placeholder-label">AR-NIS</span>
+              </div>
+              <div class="proj-body">
+                <div class="proj-top">
+                  <div>
+                    <div class="proj-status proj-status--soon">
+                      <span class="proj-status-dot proj-status-dot--soon"></span>Deploying soon
+                    </div>
+                    <h3 class="proj-name">AR-NIS</h3>
+                    <p class="proj-role">Capstone · School Project · Mobile App</p>
+                  </div>
+                  <span class="proj-platform-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+                    Mobile
+                  </span>
+                </div>
+                <p class="proj-desc">AR-powered mobile capstone app for school — in final deployment stages. Built with mobile-first architecture and augmented reality features.</p>
+                <div class="proj-tags">
+                  <span>Mobile App</span><span>AR</span><span>Unity</span><span>Capstone</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ─── EXPERIENCE ─────────────────────────────────────────── -->
+    <section id="experience" class="section section-tinted" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="section-intro reveal">
+          <span class="section-label">Where I've been</span>
+          <h2 id="exp-heading">Experience</h2>
+        </div>
+
+        <div class="timeline reveal">
+
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024 – 2025</span>
+                <span class="timeline-badge">Work</span>
+              </div>
+              <h3>Full Stack Developer</h3>
+              <p class="timeline-company">Chozen Resources Inc.</p>
+              <p>Built and maintained full stack web systems for real clients — front-end interfaces, back-end logic, database design, and deployment. Delivered recruitment platforms and trade portals used in production.</p>
+              <div class="timeline-tags">
+                <span>HTML/CSS/JS</span><span>PHP</span><span>MySQL</span><span>Responsive Design</span><span>Deployment</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">2024</span>
+                <span class="timeline-badge">OJT</span>
+              </div>
+              <h3>Web Developer Intern</h3>
+              <p class="timeline-company">Arkcrest Realty Corporation</p>
+              <p>Built an internal web system from scratch — secure authentication, 4-step employee onboarding flow, and a staff management dashboard for a real estate company.</p>
+              <div class="timeline-tags">
+                <span>Web System</span><span>Auth</span><span>Dashboard</span><span>Real Estate</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <div class="timeline-meta">
+                <span class="timeline-date">2022 – Aug 27, 2026</span>
+                <span class="timeline-badge timeline-badge--edu">Education</span>
+                <span class="timeline-badge timeline-badge--honor">Cum Laude</span>
+              </div>
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="timeline-company">Cavite State University – Don Severino de Las Alas Campus</p>
+              <div class="timeline-honors">
+                <span class="honor-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  Cum Laude
+                </span>
+                <span class="honor-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                  GWA: 1.4580
+                </span>
+                <span class="honor-item">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Graduated August 27, 2026
+                </span>
+              </div>
+              <p>Focused on full stack development, mobile systems, and AR application development. Capstone project: AR-NIS mobile application.</p>
+              <div class="timeline-tags">
+                <span>Full Stack</span><span>Mobile Dev</span><span>AR Development</span><span>System Design</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CONTACT ─────────────────────────────────────────── -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+
+        <div class="contact-text reveal">
+          <span class="section-label">Get in touch</span>
+          <h2 id="contact-heading">I'd love to hear from you</h2>
+          <p>
+            Whether you have a project idea, want to collaborate, or just want to say hi — my inbox is always open. I'll get back to you as soon as I can.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:christineartucilla@gmail.com" class="contact-link" aria-label="Send Christine an email">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              christineartucilla@gmail.com
+            </a>
+            <a href="https://github.com/christineartucilla" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Christine's GitHub profile">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              github.com/christineartucilla
+            </a>
+            <a href="https://linkedin.com/in/christineartucilla" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Christine's LinkedIn profile">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/christineartucilla
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal reveal--delay" id="contactForm" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Send message
+          </button>
+          <p class="form-note" id="formStatus" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ─── FOOTER ─────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="container footer-inner">
+      <span>© 2026 Christine Artucilla</span>
+      <span>Built with ♥ and lots of CSS</span>
+      <a href="#top" class="back-to-top" aria-label="Back to top">↑ Top</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
