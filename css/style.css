@@ -213,6 +213,7 @@ input, textarea { font: inherit; }
   margin-top: -64px;
   margin-left: 32px;
 }
+/* ── Profile avatar rotate ── */
 .profile-avatar {
   width: 124px; height: 124px;
   border-radius: 50%;
@@ -221,6 +222,7 @@ input, textarea { font: inherit; }
   box-shadow: var(--shadow-lg);
   background: var(--bg-2);
   display: block;
+  transition: opacity 0.6s ease;
 }
 .profile-status-dot {
   position: absolute;

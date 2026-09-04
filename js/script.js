@@ -53,7 +53,19 @@ filterBtns.forEach(btn => {
   });
 });
 
-/* ── Active profile tab on scroll ── */
+/* ── Profile avatar auto-rotate ── */
+const avatarEl = document.getElementById('profileAvatar');
+const avatarPhotos = ['Profile/PROFILE 1.png', 'Profile/PROFILE 2.png'];
+let avatarIndex = 0;
+
+setInterval(() => {
+  avatarIndex = (avatarIndex + 1) % avatarPhotos.length;
+  avatarEl.style.opacity = '0';
+  setTimeout(() => {
+    avatarEl.src = avatarPhotos[avatarIndex];
+    avatarEl.style.opacity = '1';
+  }, 600);
+}, 5000);
 const tabs = Array.from(document.querySelectorAll('.profile-tab[href^="#"]'));
 const sections = tabs.map(t => document.querySelector(t.getAttribute('href'))).filter(Boolean);
 
