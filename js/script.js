@@ -67,6 +67,18 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
+/* ── Back to top button ── */
+const backToTopBtn = document.getElementById('backToTopBtn');
+if (backToTopBtn) {
+  window.addEventListener('scroll', () => {
+    backToTopBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
+
 /* ── Profile avatar auto-rotate ── */
 const avatarEl     = document.getElementById('profileAvatar');
 const avatarPhotos = ['Profile/PROFILE 1.png', 'Profile/PROFILE 2.png'];
