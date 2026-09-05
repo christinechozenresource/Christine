@@ -24,8 +24,11 @@ function setActiveTab(tab) {
 // On tab click — scroll directly to section content
 tabs.forEach(tab => {
   tab.addEventListener('click', e => {
+    const href = tab.getAttribute('href');
+    // Home tab — scroll to top normally
+    if (!href.startsWith('#')) return;
     e.preventDefault();
-    const targetId = tab.getAttribute('href').replace('#', '');
+    const targetId = href.replace('#', '');
     const section  = document.getElementById(targetId);
     if (!section) return;
     setActiveTab(tab);
@@ -35,19 +38,27 @@ tabs.forEach(tab => {
   });
 });
 
-// Init indicator on load
+// Init indicator on load — Home is active by default
 window.addEventListener('load', () => {
-  const active = document.querySelector('.profile-tab--active') || tabs[0];
-  if (active) moveIndicator(active);
+  const homeTab = document.querySelector('.profile-tab[data-tab="home"]');
+  if (homeTab) setActiveTab(homeTab);
 });
 
 // Update active tab on scroll
-const tabSections = Array.from(tabs).map(t =>
-  document.getElementById(t.getAttribute('href').replace('#', ''))
-).filter(Boolean);
+const tabSections = Array.from(tabs)
+  .filter(t => t.getAttribute('href').startsWith('#'))
+  .map(t => document.getElementById(t.getAttribute('href').replace('#', '')))
+  .filter(Boolean);
 
 window.addEventListener('scroll', () => {
   const scrollY = window.scrollY + window.innerHeight * 0.25;
+
+  // If near the very top, activate Home
+  if (window.scrollY < 100) {
+    const homeTab = document.querySelector('.profile-tab[data-tab="home"]');
+    if (homeTab) { setActiveTab(homeTab); return; }
+  }
+
   let current = null;
   tabSections.forEach(sec => { if (sec.offsetTop <= scrollY) current = sec; });
   if (current) {
