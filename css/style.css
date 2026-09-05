@@ -304,6 +304,7 @@ input, textarea { font: inherit; }
   overflow-x: auto;
   scrollbar-width: none;
   gap: 0;
+  position: relative;
 }
 .profile-tabs::-webkit-scrollbar { display: none; }
 .profile-tab {
@@ -313,13 +314,24 @@ input, textarea { font: inherit; }
   color: var(--muted);
   border-bottom: 3px solid transparent;
   white-space: nowrap;
-  transition: color var(--t), border-color var(--t);
+  transition: color 0.2s ease;
   flex-shrink: 0;
+  position: relative;
+  z-index: 1;
 }
 .profile-tab:hover { color: var(--text); }
-.profile-tab--active {
-  color: var(--accent);
-  border-bottom-color: var(--accent);
+.profile-tab--active { color: var(--accent); }
+
+/* Animated sliding indicator */
+.tab-indicator {
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px 2px 0 0;
+  transition: left 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 
 /* Stats strip */
