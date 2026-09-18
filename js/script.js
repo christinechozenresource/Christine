@@ -19,16 +19,25 @@
   }
 
   function draw() {
-    ctx.fillStyle = 'rgba(248, 250, 255, 0.05)';
+    // Fade trail
+    ctx.fillStyle = 'rgba(248, 250, 255, 0.08)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = '#3b82f6';
+
     ctx.font = fontSize + 'px monospace';
 
     for (let i = 0; i < drops.length; i++) {
       const char = chars[Math.floor(Math.random() * chars.length)];
-      ctx.fillStyle = Math.random() > 0.95 ? '#93c5fd' : '#2563eb';
+      // Bright white head, blue body
+      if (Math.random() > 0.92) {
+        ctx.fillStyle = '#ffffff';
+      } else if (Math.random() > 0.5) {
+        ctx.fillStyle = '#3b82f6';
+      } else {
+        ctx.fillStyle = '#1d4ed8';
+      }
       ctx.fillText(char, i * fontSize, drops[i] * fontSize);
-      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.97) {
         drops[i] = 0;
       }
       drops[i]++;
@@ -37,7 +46,7 @@
 
   resize();
   window.addEventListener('resize', resize);
-  setInterval(draw, 50);
+  setInterval(draw, 40);
 })();
 
 /* ── Tab indicator + smooth scroll to section content ── */
