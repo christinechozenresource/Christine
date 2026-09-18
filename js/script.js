@@ -2,41 +2,38 @@
    Christine Portfolio — script.js
    ────────────────────────────────────────────── */
 
-/* ── Code Rain ── */
+/* ── Code Rain — cover photo only ── */
 (function() {
   const canvas  = document.getElementById('codeRain');
   if (!canvas) return;
   const ctx     = canvas.getContext('2d');
-  const chars   = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF</>{}[]';
-  const fontSize = 14;
+  const chars   = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF</>{}[]const';
+  const fontSize = 13;
   let cols, drops;
 
   function resize() {
-    canvas.width  = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const cover   = canvas.parentElement;
+    canvas.width  = cover.offsetWidth;
+    canvas.height = cover.offsetHeight;
     cols  = Math.floor(canvas.width / fontSize);
     drops = Array(cols).fill(1);
   }
 
   function draw() {
-    // Fade trail
-    ctx.fillStyle = 'rgba(248, 250, 255, 0.08)';
+    ctx.fillStyle = 'rgba(15, 23, 42, 0.08)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-
     ctx.font = fontSize + 'px monospace';
 
     for (let i = 0; i < drops.length; i++) {
       const char = chars[Math.floor(Math.random() * chars.length)];
-      // Bright white head, blue body
-      if (Math.random() > 0.92) {
+      if (Math.random() > 0.93) {
         ctx.fillStyle = '#ffffff';
       } else if (Math.random() > 0.5) {
-        ctx.fillStyle = '#3b82f6';
+        ctx.fillStyle = '#93c5fd';
       } else {
-        ctx.fillStyle = '#1d4ed8';
+        ctx.fillStyle = '#3b82f6';
       }
       ctx.fillText(char, i * fontSize, drops[i] * fontSize);
-
       if (drops[i] * fontSize > canvas.height && Math.random() > 0.97) {
         drops[i] = 0;
       }
