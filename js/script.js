@@ -2,6 +2,44 @@
    Christine Portfolio — script.js
    ────────────────────────────────────────────── */
 
+/* ── Code Rain ── */
+(function() {
+  const canvas  = document.getElementById('codeRain');
+  if (!canvas) return;
+  const ctx     = canvas.getContext('2d');
+  const chars   = 'アイウエオカキクケコサシスセソタチツテトナニヌネノ0123456789ABCDEF</>{}[]';
+  const fontSize = 14;
+  let cols, drops;
+
+  function resize() {
+    canvas.width  = window.innerWidth;
+    canvas.height = window.innerHeight;
+    cols  = Math.floor(canvas.width / fontSize);
+    drops = Array(cols).fill(1);
+  }
+
+  function draw() {
+    ctx.fillStyle = 'rgba(248, 250, 255, 0.05)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#3b82f6';
+    ctx.font = fontSize + 'px monospace';
+
+    for (let i = 0; i < drops.length; i++) {
+      const char = chars[Math.floor(Math.random() * chars.length)];
+      ctx.fillStyle = Math.random() > 0.95 ? '#93c5fd' : '#2563eb';
+      ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+  setInterval(draw, 50);
+})();
+
 /* ── Tab indicator + smooth scroll to section content ── */
 const tabs        = document.querySelectorAll('.profile-tab[data-tab]');
 const indicator   = document.querySelector('.tab-indicator');
